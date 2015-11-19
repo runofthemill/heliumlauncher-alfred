@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>heliumlauncher</string>
+	<key>category</key>
+	<string>Internet</string>
+	<key>connections</key>
+	<dict>
+		<key>1C8B38C2-1604-4F72-86AF-63CCDC5637DE</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>5F4E4057-435F-43F6-B78F-F98CB4F8BC4D</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>jeremy e. miller</string>
+	<key>description</key>
+	<string>Open a video URL in Helium</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Helium Launcher</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>h:</string>
+				<key>text</key>
+				<string>Launch Heliuum</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>1C8B38C2-1604-4F72-86AF-63CCDC5637DE</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>do shell script "Open helium://"
+delay 1
+do shell script "Open helium://{query}"</string>
+				<key>type</key>
+				<integer>6</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>5F4E4057-435F-43F6-B78F-F98CB4F8BC4D</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string>Alfred Workflow for opening video links in Helium (http://heliumfloats.com/)
+
+https://github.com/runofthemill/heliumlauncher-alfred</string>
+	<key>uidata</key>
+	<dict>
+		<key>1C8B38C2-1604-4F72-86AF-63CCDC5637DE</key>
+		<dict>
+			<key>ypos</key>
+			<real>10</real>
+		</dict>
+		<key>5F4E4057-435F-43F6-B78F-F98CB4F8BC4D</key>
+		<dict>
+			<key>ypos</key>
+			<real>10</real>
+		</dict>
+	</dict>
+	<key>webaddress</key>
+	<string>jeremyemiller.com</string>
+</dict>
+</plist>
